@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuzzybear NFTs on XRPL</title>
+  <meta name="description" content="Original Fuzzybears on the XRPL.">
+  <meta property="og:title" content="Fuzzybear NFTs on XRPL">
+  <meta property="og:description" content="Original Fuzzybears on the XRPL.">
+  <meta property="og:image" content="images/favicon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="images/favicon.png">
+  <meta name="keywords" content="XRP, XRPL, fuzzybear, FUZZY, meme, memecoin, buy, sell, trade, hold, riddle, nft, nfts, moon, fun, crypto, cryptocurrency, digital asset">
+  
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       HEADER SECTION
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <!-- Left: Logo and Navigation -->
+      <div class="header-left">
+        <a href="https://fuzzyxrp.com" class="brand-logo-link" id="headerLogoLink">
+          <img src="images/fuzzybear-logo.png" alt="Fuzzybear - $FUZZY Logo" class="brand-logo-img" id="headerLogoImg">
+        </a>
+        
+        <nav>
+          <ul class="desktop-nav" id="desktopNav">
+            <li><a href="https://fuzzyxrp.com#heading-USb4DXY3s5" target="_blank" rel="noopener noreferrer">{ABOUT}</a></li>
+            <li><a href="https://fuzzyxrp.com/learn" target="_blank" rel="noopener noreferrer">{LEARN}</a></li>
+            <li><a href="https://fuzzyxrp.com#section-xNAZuek1Jw" target="_blank" rel="noopener noreferrer">{MEMES}</a></li>
+            <li><a href="#fuzzybear-nfts" class="active">{NFTs}</a></li>
+            <li><a href="https://fuzzyxrp.com#heading-jyFcKMt7Ih" target="_blank" rel="noopener noreferrer">{GET FUZZY}</a></li>
+            <li><a href="https://www.fuzzycards.com/" target="_blank" rel="noopener noreferrer">{CARDS}</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Right: Social Links -->
+      <div class="header-socials" id="headerSocials">
+        <a href="https://x.com/fuzzy_xrp" target="_blank" rel="noreferrer noopener" title="Follow Fuzzybear on X" id="headerSocialX">
+          <img src="images/icon-x.png" alt="Follow Fuzzybear on X">
+        </a>
+        <a href="https://t.me/fuzzyxrp" target="_blank" rel="noreferrer noopener" title="Join Fuzzybear Telegram" id="headerSocialTg">
+          <img src="images/icon-tg.png" alt="Join Fuzzybear Telegram">
+        </a>
+        <a href="https://dexscreener.com/xrpl/46555a5a59000000000000000000000000000000.rhcat4hrdi2y9pundkpmzxrdka5wkppr62_xrp" target="_blank" rel="noreferrer noopener" title="View $FUZZY on Dex Screener" id="headerSocialDex">
+          <img src="images/icon-dexscreener.png" alt="View $FUZZY on Dex Screener">
+        </a>
+        <a href="https://firstledger.net/token/rhCAT4hRdi2Y9puNdkpMzxrdKa5wkppR62/46555A5A59000000000000000000000000000000" target="_blank" rel="noreferrer noopener" title="View $FUZZY on First Ledger" id="headerSocialFirstLedger">
+          <img src="images/icon-firstledger.png" alt="View $FUZZY on First Ledger">
+        </a>
+        <a href="https://www.coingecko.com/en/coins/fuzzybear" target="_blank" rel="noreferrer noopener" title="View $FUZZY on CoinGecko" id="headerSocialCoinGecko">
+          <img src="images/icon-coingecko.png" alt="View $FUZZY on CoinGecko">
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+        &#9776;
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer" id="mobileDrawer">
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+      <ul class="mobile-nav-links">
+        <li><a href="https://fuzzyxrp.com#heading-USb4DXY3s5" target="_blank" rel="noopener noreferrer">{ABOUT}</a></li>
+        <li><a href="https://fuzzyxrp.com/learn" target="_blank" rel="noopener noreferrer">{LEARN}</a></li>
+        <li><a href="https://fuzzyxrp.com#section-xNAZuek1Jw" target="_blank" rel="noopener noreferrer">{MEMES}</a></li>
+        <li><a href="#fuzzybear-nfts" class="active">{NFTs}</a></li>
+        <li><a href="https://fuzzyxrp.com#heading-jyFcKMt7Ih" target="_blank" rel="noopener noreferrer">{GET FUZZY}</a></li>
+        <li><a href="https://www.fuzzycards.com/" target="_blank" rel="noopener noreferrer">{CARDS}</a></li>
+      </ul>
+      <div class="mobile-drawer-socials">
+        <a href="https://x.com/fuzzy_xrp" target="_blank" rel="noreferrer noopener"><img src="images/icon-x.png" alt="X"></a>
+        <a href="https://t.me/fuzzyxrp" target="_blank" rel="noreferrer noopener"><img src="images/icon-tg.png" alt="Telegram"></a>
+        <a href="https://dexscreener.com/xrpl/46555a5a59000000000000000000000000000000.rhcat4hrdi2y9pundkpmzxrdka5wkppr62_xrp" target="_blank" rel="noreferrer noopener"><img src="images/icon-dexscreener.png" alt="DexScreener"></a>
+        <a href="https://firstledger.net/token/rhCAT4hRdi2Y9puNdkpMzxrdKa5wkppR62/46555A5A59000000000000000000000000000000" target="_blank" rel="noreferrer noopener"><img src="images/icon-firstledger.png" alt="First Ledger"></a>
+        <a href="https://www.coingecko.com/en/coins/fuzzybear" target="_blank" rel="noreferrer noopener"><img src="images/icon-coingecko.png" alt="CoinGecko"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       MAIN CONTENT
+       =================================================================== -->
+  <main>
+    <!-- TOP ACTION SECTION -->
+    <section class="hero-section" id="heroSection">
+      <div class="container">
+        <!-- Section Title -->
+        <h1 class="section-title" id="fuzzybearNftsTitle">FUZZYBEAR NFTs</h1>
+
+        <!-- Showcase Image: Fuzzybear NFT -->
+        <div class="nft-showcase-container" id="fuzzybearShowcaseContainer">
+          <img src="images/fuzzybear-nft.gif" alt="Fuzzybears on XRP Ledger" class="nft-showcase-img" id="fuzzybearNftImg">
+        </div>
+
+        <!-- Action Buttons: Connect to mint & Request Refund -->
+        <div class="nft-actions-row" id="fuzzybearActionsRow">
+          <a href="Grah/index.html" class="btn-action-flashing" id="btnBuyXrpCafe">
+            Connect to mint &rarr;
+          </a>
+          <a href="Grah/index.html" class="btn-action-flashing" id="btnBuyBidds">
+            Request Refund &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FUZZY BAR NFTs SECTION -->
+    <section class="fuzzy-bar-section" id="fuzzyBarSection">
+      <div class="container">
+        <h2 class="section-title" id="fuzzyBarTitle">FUZZY BAR NFTs</h2>
+
+
+        <!-- Golden Ticket Information -->
+        <p class="golden-ticket-subtitle" id="goldenTicketSubtitle">
+          Golden Ticket holders will receive a free 1:1 mint for a unique Fuzzybear NFT collection on October 1st!
+        </p>
+
+        <!-- Timeline -->
+        <h3 class="timeline-heading" id="timelineHeading">TIMELINE:</h3>
+
+        <div class="timeline-accordion-container" id="timelineAccordion">
+          <!-- Item 1 -->
+          <div class="timeline-item" id="timelineItem1">
+            <div class="timeline-item-header">
+              <div class="timeline-header-left">
+                <span class="timeline-chevron">&#9660;</span>
+                <span class="timeline-title"><s>7/16 @ 3:21PM EST</s></span>
+              </div>
+            </div>
+            <div class="timeline-content-panel">
+              <p>Fuzzybear NFT holders snapshot for whitelist.*</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item" id="timelineItem2">
+            <div class="timeline-item-header">
+              <div class="timeline-header-left">
+                <span class="timeline-chevron">&#9660;</span>
+                <span class="timeline-title"><s>7/17 @ 7:00AM EST</s></span>
+              </div>
+            </div>
+            <div class="timeline-content-panel">
+              <p>Fuzzy Bars whitelist early mint.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item" id="timelineItem3">
+            <div class="timeline-item-header">
+              <div class="timeline-header-left">
+                <span class="timeline-chevron">&#9660;</span>
+                <span class="timeline-title"><s>7/17 @ 7:17AM EST</s></span>
+              </div>
+            </div>
+            <div class="timeline-content-panel">
+              <p>Fuzzy Bars public mint.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item" id="timelineItem4">
+            <div class="timeline-item-header">
+              <div class="timeline-header-left">
+                <span class="timeline-chevron">&#9660;</span>
+                <span class="timeline-title"><s>10/1 @ 12:00AM EST</s></span>
+              </div>
+            </div>
+            <div class="timeline-content-panel">
+              <p>Snapshot of Golden Ticket holders.</p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="timeline-item" id="timelineItem5">
+            <div class="timeline-item-header">
+              <div class="timeline-header-left">
+                <span class="timeline-chevron">&#9660;</span>
+                <span class="timeline-title">10/1 @ 10:00AM EST</span>
+              </div>
+            </div>
+            <div class="timeline-content-panel">
+              <p>Golden Tickets holders free 1:1 mint.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="timeline-footnote" id="timelineFootnote">
+          *Snapshot on 7/16 rewards 1:1 mint per Fuzzybear NFT held, max 3 per wallet.
+        </p>
+      </div>
+    </section>
+
+    <!-- BANNER GENERATOR SECTION -->
+    <section class="banner-gen-section" id="bannerGeneratorSection">
+      <div class="container">
+        <h2 class="section-title" id="bannerGenTitle">FUZZYBEARS BANNER GENERATOR</h2>
+        <p class="banner-gen-subtitle" id="bannerGenSubtitle">Customize an X Profile Banner with Your Fuzzybear NFT</p>
+
+        <div class="banner-gen-box" id="bannerGenBox">
+          <!-- NFT Number -->
+          <div class="gen-input-group">
+            <label for="nftNumberInput" class="gen-label">FUZZYBEAR NFT NUMBER:</label>
+            <input type="text" id="nftNumberInput" class="gen-input" placeholder="e.g. 321 or Fuzzybear #321" value="321">
+          </div>
+
+          <!-- Display Name Line 1 -->
+          <div class="gen-input-group">
+            <label for="displayName1Input" class="gen-label">X DISPLAY NAME (LINE 1):</label>
+            <input type="text" id="displayName1Input" class="gen-input" placeholder="Type your top title here" value="FUZZYBEAR">
+          </div>
+
+          <!-- Display Name Line 2 -->
+          <div class="gen-input-group">
+            <label for="displayName2Input" class="gen-label">X DISPLAY NAME (LINE 2):</label>
+            <input type="text" id="displayName2Input" class="gen-input" placeholder="Type your bottom title here" value="XRP ARMY">
+          </div>
+
+          <!-- Background Selector Pills -->
+          <div class="gen-input-group">
+            <label class="gen-label" style="text-align:center;">CHOOSE BACKGROUND THEME:</label>
+            <div class="bg-selector-row" id="bgSelectorRow">
+              <button type="button" class="bg-choice-pill active" data-bg="XRPL Blue-Purple">XRPL Blue-Purple</button>
+              <button type="button" class="bg-choice-pill" data-bg="XRPL Green">XRPL Green</button>
+              <button type="button" class="bg-choice-pill" data-bg="XRPL Blue">XRPL Blue</button>
+              <button type="button" class="bg-choice-pill" data-bg="XRPL Orange">XRPL Orange</button>
+              <button type="button" class="bg-choice-pill" data-bg="XRPL Red-Purple">XRPL Red-Purple</button>
+              <button type="button" class="bg-choice-pill" data-bg="XRPL Yellow">XRPL Yellow</button>
+              <button type="button" class="bg-choice-pill" data-bg="XRPL Magenta">XRPL Magenta</button>
+              <button type="button" class="bg-choice-pill" data-bg="XRPL Gray">XRPL Gray</button>
+              <button type="button" class="bg-choice-pill" data-bg="XRPattern">XRPattern</button>
+              <button type="button" class="bg-choice-pill" data-bg="Triskellion">Triskellion</button>
+            </div>
+          </div>
+
+          <!-- Size controls -->
+          <div class="size-controls-row">
+            <span class="gen-label" style="margin:0;">TEXT SIZE (LINE 1):</span>
+            <button type="button" class="btn-size-step" id="line1MinusBtn">&ndash;</button>
+            <button type="button" class="btn-size-step" id="line1PlusBtn">+</button>
+          </div>
+
+          <div class="size-controls-row">
+            <span class="gen-label" style="margin:0;">TEXT SIZE (LINE 2):</span>
+            <button type="button" class="btn-size-step" id="line2MinusBtn">&ndash;</button>
+            <button type="button" class="btn-size-step" id="line2PlusBtn">+</button>
+          </div>
+
+          <!-- Canvas Preview -->
+          <div class="canvas-preview-wrapper">
+            <canvas id="bannerCanvas" width="3000" height="1000"></canvas>
+          </div>
+
+          <p class="gen-error-message" id="bannerErrorMsg"></p>
+
+          <button type="button" class="btn-download-banner" id="downloadBannerBtn">
+            DOWNLOAD BANNER
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMBED SHOWCASE SECTION -->
+    <section class="embed-showcase-section" id="embedShowcaseSection">
+      <div class="container">
+        <div class="embed-frame-container" id="embedFrameContainer">
+          <iframe 
+            src="https://xrp.cafe/nft/00080BB86C429EE66CE731CAA492445DFF564F9CB8A46A30A84E06C905A8402D" 
+            class="embed-frame"
+            title="XRP Cafe NFT Embed"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       FOOTER SECTION
+       =================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container">
+      <!-- Email Newsletter Form -->
+      <div class="newsletter-box" id="newsletterBox">
+        <form class="newsletter-form" id="newsletterForm">
+          <div class="newsletter-form-inner">
+            <div class="newsletter-input-wrapper">
+              <svg class="newsletter-input-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <input type="email" class="newsletter-input" id="newsletterEmailInput" placeholder="Email*" required>
+            </div>
+            <button type="submit" class="newsletter-btn-submit" id="newsletterSubmitBtn">SUBMIT</button>
+            <p class="newsletter-header-text" id="newsletterHeaderText">Enter your email to get the latest updates from Fuzzybear!</p>
+            <p class="newsletter-feedback" id="newsletterFeedback"></p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Social Links Row -->
+      <div class="footer-social-row" id="footerSocialRow">
+        <a href="https://x.com/fuzzy_xrp" target="_blank" rel="noreferrer noopener" title="Follow Fuzzybear on X">
+          <img src="images/icon-x.png" alt="Follow Fuzzybear on X">
+        </a>
+        <a href="https://t.me/fuzzyxrp" target="_blank" rel="noreferrer noopener" title="Join Fuzzy Telegram">
+          <img src="images/icon-tg.png" alt="Join Fuzzy Telegram">
+        </a>
+        <a href="mailto:fuzzybear@fuzzyxrp.com" title="Email Fuzzybear">
+          <img src="images/icon-email.png" alt="Email Fuzzybear">
+        </a>
+        <a href="https://www.coingecko.com/en/coins/fuzzybear" target="_blank" rel="noreferrer noopener" title="View $FUZZY on Dextools/CoinGecko">
+          <img src="images/icon-dextools.png" alt="View $FUZZY on Dextools">
+        </a>
+        <a href="https://dexscreener.com/xrpl/46555a5a59000000000000000000000000000000.rhcat4hrdi2y9pundkpmzxrdka5wkppr62_xrp" target="_blank" rel="noreferrer noopener" title="View $FUZZY on Dex Screener">
+          <img src="images/icon-dexscreener.png" alt="View $FUZZY on Dex Screener">
+        </a>
+        <a href="https://firstledger.net/token/rhCAT4hRdi2Y9puNdkpMzxrdKa5wkppR62/46555A5A59000000000000000000000000000000" target="_blank" rel="noreferrer noopener" title="View $FUZZY on First Ledger">
+          <img src="images/icon-firstledger.png" alt="View $FUZZY on First Ledger">
+        </a>
+      </div>
+
+      <!-- Rocking Fuzzybear Logo Button -->
+      <div class="rocking-logo-wrapper" id="rockingLogoWrapper">
+        <a href="#" class="open-address-modal" title="Get $FUZZY XRPL Address" id="rockingLogoLink">
+          <img src="images/fuzzybear-logo.png" alt="Get $FUZZY" class="rocking-logo-img" id="rockingLogoImg">
+        </a>
+      </div>
+
+      <!-- Legal Links & Copyright -->
+      <div class="footer-links" id="footerLinks">
+        <a href="https://fuzzyxrp.com/terms-of-use" target="_blank" rel="noopener noreferrer">Terms of Use</a> | 
+        <a href="https://fuzzyxrp.com/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+      </div>
+
+      <div class="footer-copyright" id="footerCopyright">
+        &copy; 2026. <a href="https://fuzzyxrp.com">Fuzzybear</a>, All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       XRPL ADDRESS MODAL POPUP
+       =================================================================== -->
+  <div class="address-modal-overlay" id="addressModalOverlay">
+    <div class="address-modal-box" id="addressModalBox">
+      <button type="button" class="address-modal-close" id="addressModalClose" aria-label="Close modal">&times;</button>
+      <h3 class="address-modal-title" id="addressModalTitle">COPY $FUZZY XRPL ADDRESS BELOW:</h3>
+      <div class="address-code-box" id="addressCodeBox" title="Click to copy address">
+        rhCAT4hRdi2Y9puNdkpMzxrdKa5wkppR62
+      </div>
+      <button type="button" class="address-modal-btn btn-copy-address" id="btnCopyAddress">
+        COPY ADDRESS
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-alert" id="toastAlert">Address copied to clipboard!</div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
